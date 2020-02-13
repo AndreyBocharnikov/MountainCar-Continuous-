@@ -106,14 +106,7 @@ for i in range(num_iter):
     if i % 100 == 0 and i > 0:
         print('number of iterations ', i, 'last 15 rewards ', np.mean(rewards[-15:]))
 
-plt.plot(rewards[-100:])
-plt.ylabel('rewards')
-plt.xlabel('epoch')
-#plt.show()
-plt.savefig('Continuous_last100.png')
-
 plt.plot(rewards)
 plt.ylabel('rewards')
 plt.xlabel('epoch')
-#plt.show()
-plt.savefig('Continuous.png')
+plt.show()
